@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202733;
+    padding: 2rem;
+    gap: 100px;
+    
+}
+
+.card{
+    position: relative;
+    width: 561px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 50px 50px 70px;
+    background: #323A49;
+    border-radius: 20px;
+}
+
+.phrase, .advice{
+    text-align: center;
+}
+
+.phrase{
+    color: #CEE3E9;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+}
+
+.advice{
+    color: #52FFA8;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 5px;
+}
+
+#indentificador{
+    color: inherit;
+    font-size: inherit;
+}
+
+.btn-wrapper-icon{
+    position: absolute;
+    bottom: -28px;
+    display: block;
+    background-color: #52FFA8;
+    border-radius: 50%;
+    padding: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-wrapper-icon:hover{
+    background-color: #52ffa9ca;
+}
+
+
+.attribution {
+    max-width: 561px;
+    color: #CEE3E9; 
+    font-size: 11px; 
+    text-align: center;
+    letter-spacing: 1px; 
+}
+.attribution a { 
+    color: hsl(228, 83%, 65%); 
+}
+
+img{
+    display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        position: relative;
+        width: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        padding: 50px 30px 70px;
+        background: #323A49;
+        border-radius: 20px;
+    }
+    .phrase{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .advice{
+        font-size: 12px;
+    }
+
+    .attribution {
+        max-width: 325px;
+    }
+}
